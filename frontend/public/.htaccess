@@ -1,0 +1,14 @@
+# Proper MIME types for modules
+AddType text/javascript .js
+AddType text/javascript .mjs
+AddType application/javascript .js
+AddType application/javascript .mjs
+
+# Handle module scripts correctly
+<Files "*.js">
+    Header always set Content-Type "text/javascript; charset=utf-8"
+</Files>
+
+<Files "*.mjs">
+    Header always set Content-Type "text/javascript; charset=utf-8"
+</Files>
