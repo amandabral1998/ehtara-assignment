@@ -162,7 +162,7 @@ export default function EmployeesPage() {
                           size="sm" 
                           onClick={() => {
                             if (emp?.id) {
-                              deleteEmployee(emp.id);
+                              deleteEmployee(emp._id);
                             } else {
                               toast.error('Invalid employee ID');
                             }
